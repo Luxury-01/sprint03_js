@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+
+}
+
+.container {
+  width: 1000px;
+  height: 800px;
+  margin: 20px auto;
+  background-color: #333333;
+}
+
+.gameName {
+  font-size: 1.5em;
+  color: antiquewhite;
+  margin: 0 0 0 420px;
+  padding: 20px 0 0 0;
+}
+
+/*--------Game Field-------*/
+.field {
+  display: grid;
+  grid-template-columns: 205px 205px 205px;
+  grid-template-rows: 205px 205px 205px;
+  margin: 30px 0 0 90px;
+}
+
+.cell {
+  margin: 10px 10px 0 0;
+  border: 2px solid black;
+  background-color: #C1C1C1;
+  box-shadow: 5px 5px #D98D21;
+  cursor: pointer;
+}
+
+.circle {
+  width: 130px;
+  height: 130px;
+  border: 15px solid black;
+  border-radius: 50%;
+  margin: 30px 0 0 30px;
+}
+
+.cross {
+  position: relative;
+  width: 15px;
+  height: 140px;
+  margin: 25px 0 0 90px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+
+.cross::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 140px;
+  background-color: black;
+  transform: rotate(-90deg);
+}
+
+/*------Navigation Board------*/
+.board {
+  width: 200px;
+  height: 602px;
+  background-color: #C1C1C1;
+  margin: -603px 0 0 707px;
+}
+
+.playerOne {
+  position: absolute;
+  width: 180px;
+  height: 45px;
+  background-color: #D98D21;
+  margin: 20px 0 0 10px;
+  padding: 12px 0 0 0;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 1.3em;
+}
+
+.playerTwo {
+  position: absolute;
+  width: 180px;
+  height: 45px;
+  background-color: #D3D3D3;
+  margin: 75px 0 0 10px;
+  padding: 12px 0 0 0;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 1.3em;
+}
+
+.text {
+  position: absolute;
+  margin: 145px 0 0 25px;
+  font-size: 1.15em;
+}
+
+.countNumber {
+  position: absolute;
+  margin: 190px 0 0 85px;
+  font-size: 2.2em;
+}
+
+.result {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  margin: 300px 0 0 25px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.buttonReset {
+  position: absolute;
+  width: 180px;
+  height: 45px;
+  margin: 535px 0 0 10px;
+  background-color: #404040;
+  color: antiquewhite;
+  font-size: 1.1em;
+  cursor: pointer;
+  outline: none;
+}

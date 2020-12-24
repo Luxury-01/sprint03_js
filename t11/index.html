@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="t11. Notes with cookies">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Notes with cookies</title>
+</head>
+
+<body>
+  <form class="container">
+    <input class="button one" type="button" onclick="getInputVal()" value="Add to cookies" >
+    <input class="button two" type="button" onclick="resetOutputVal()" value="Clear cookies">
+    <div class="textInput">
+      <p>Input text:</p>
+      <textarea name="input" id="inputText" cols="30" rows="10"></textarea>
+    </div>
+    <div class="archive">
+      <p>Notes archive:</p>
+      <textarea name="output" id="" cols="30" rows="10" class="output">[Empty]</textarea>
+    </div>
+  </form>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
